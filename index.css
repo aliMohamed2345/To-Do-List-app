@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #2ecc71, #ff6f61);
+  min-height: 100vh;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 20px 0;
+  border: white 1px solid;
+  border-radius: 15px;
+}
+.container {
+  margin-top: 50px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+form {
+  display: flex;
+  padding-top: 30px;
+}
+form input[type="text"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 20px;
+  min-width: 400px;
+  background-color: #eee;
+}
+
+form input[type="button"] {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: rgb(155, 3, 155);
+  transition: 0.4s all ease;
+}
+form input[type="button"]:hover {
+  background-color: purple;
+}
+.taskList {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.taskList p {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+.taskList .tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none !important;
+  position: relative;
+}
+.taskList .tasks .task::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  top: 0;
+  left: 50%;
+  color: black;
+}
+.taskList .tasks .task button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.taskList .tasks .task button.check {
+  background-color: greenyellow;
+}
+.taskList .tasks .task button.delete {
+  background-color: crimson;
+}
+.taskList .tasks .task p {
+  color: #ff6f61;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* text-decoration: line-through 3px black */
